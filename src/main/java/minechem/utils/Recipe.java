@@ -93,7 +93,7 @@ public class Recipe
                 craftingRecipes.addAll(add);
             }
         }
-        if (Loader.isModLoaded("Railcaft"))
+        if (Loader.isModLoaded("Railcraft"))
         {
             List add = getRailcraftRecipes();
             if (add != null)
