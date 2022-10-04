@@ -288,13 +288,7 @@ public class MinechemRecipes
                 this.element(ElementEnum.Si), this.element(ElementEnum.O)
             }), new DecomposerRecipe(new PotionChemical[]
             {
-                this.element(ElementEnum.Fe), this.element(ElementEnum.O)
-            }), new DecomposerRecipe(new PotionChemical[]
-            {
                 this.element(ElementEnum.Mg), this.element(ElementEnum.O)
-            }), new DecomposerRecipe(new PotionChemical[]
-            {
-                this.element(ElementEnum.Ti), this.element(ElementEnum.O)
             }), new DecomposerRecipe(new PotionChemical[]
             {
                 this.element(ElementEnum.Pb), this.element(ElementEnum.O)
@@ -320,13 +314,7 @@ public class MinechemRecipes
                 this.element(ElementEnum.Si), this.element(ElementEnum.O)
             }), new DecomposerRecipe(new PotionChemical[]
             {
-                this.element(ElementEnum.Fe), this.element(ElementEnum.O)
-            }), new DecomposerRecipe(new PotionChemical[]
-            {
                 this.element(ElementEnum.Mg), this.element(ElementEnum.O)
-            }), new DecomposerRecipe(new PotionChemical[]
-            {
-                this.element(ElementEnum.Ti), this.element(ElementEnum.O)
             }), new DecomposerRecipe(new PotionChemical[]
             {
                 this.element(ElementEnum.Pb), this.element(ElementEnum.O)
@@ -357,13 +345,7 @@ public class MinechemRecipes
                 this.element(ElementEnum.Si), this.element(ElementEnum.O)
             }), new DecomposerRecipe(new PotionChemical[]
             {
-                this.element(ElementEnum.Fe), this.element(ElementEnum.O)
-            }), new DecomposerRecipe(new PotionChemical[]
-            {
                 this.element(ElementEnum.Mg), this.element(ElementEnum.O)
-            }), new DecomposerRecipe(new PotionChemical[]
-            {
-                this.element(ElementEnum.Ti), this.element(ElementEnum.O)
             }), new DecomposerRecipe(new PotionChemical[]
             {
                 this.element(ElementEnum.Pb), this.element(ElementEnum.O)
@@ -382,13 +364,7 @@ public class MinechemRecipes
                 this.element(ElementEnum.Si), this.element(ElementEnum.O)
             }), new DecomposerRecipe(new PotionChemical[]
             {
-                this.element(ElementEnum.Fe), this.element(ElementEnum.O)
-            }), new DecomposerRecipe(new PotionChemical[]
-            {
                 this.element(ElementEnum.Mg), this.element(ElementEnum.O)
-            }), new DecomposerRecipe(new PotionChemical[]
-            {
-                this.element(ElementEnum.Ti), this.element(ElementEnum.O)
             }), new DecomposerRecipe(new PotionChemical[]
             {
                 this.element(ElementEnum.Pb), this.element(ElementEnum.O)
@@ -418,16 +394,7 @@ public class MinechemRecipes
                 this.element(ElementEnum.Si), this.element(ElementEnum.O)
             }), new DecomposerRecipe(new PotionChemical[]
             {
-                this.element(ElementEnum.Fe), this.element(ElementEnum.O)
-            }), new DecomposerRecipe(new PotionChemical[]
-            {
                 this.element(ElementEnum.Mg), this.element(ElementEnum.O)
-            }), new DecomposerRecipe(new PotionChemical[]
-            {
-                this.element(ElementEnum.Ti), this.element(ElementEnum.O)
-            }), new DecomposerRecipe(new PotionChemical[]
-            {
-                this.element(ElementEnum.Pb), this.element(ElementEnum.O)
             }), new DecomposerRecipe(new PotionChemical[]
             {
                 this.element(ElementEnum.Na), this.element(ElementEnum.Cl)
