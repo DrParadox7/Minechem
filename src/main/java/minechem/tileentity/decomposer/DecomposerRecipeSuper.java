@@ -19,33 +19,28 @@ public class DecomposerRecipeSuper extends DecomposerRecipe
     static Random random = new Random();
     public Map<MapKey, Double> recipes = new Hashtable<MapKey, Double>();
 
-    public DecomposerRecipeSuper(ItemStack input, ItemStack[] components, int level)
-    {
+    public DecomposerRecipeSuper(ItemStack input, ItemStack[] components, int level) {
         this.input = input.copy();
         this.input.stackSize = 1;
 
-        LogHelper.debug(input.toString());
-        for (ItemStack component : components)
-        {
-            if (component != null && component.getItem() != null)
-            {
-                if (component.getItem() instanceof IDecomposerControl && ((IDecomposerControl) component.getItem()).getDecomposerMultiplier(component) == 0)
-                {
-                    continue;
-                }
-                DecomposerRecipe decompRecipe = DecomposerRecipe.get(component);
-                if (decompRecipe != null)
-                {
-                    addDecompRecipe(decompRecipe, 1.0D / Math.max(input.stackSize, 1));
-                } else if (!component.isItemEqual(input) || !(component.getItemDamage() == input.getItemDamage()))
-                {
-                    //Recursively generate recipe
-                    Recipe recipe = Recipe.get(component);
-                    if (recipe != null && level < Settings.recursiveDepth)
-                    {
-                        DecomposerRecipeSuper newSuper;
-                        DecomposerRecipe.add(newSuper = new DecomposerRecipeSuper(recipe.output, recipe.inStacks, level + 1));
-                        addDecompRecipe(newSuper, 1.0D / recipe.getOutStackSize());
+        if (isBlacklisted(input) == false) {
+            LogHelper.debug(input.toString());
+            for (ItemStack component : components) {
+                if (component != null && component.getItem() != null) {
+                    if (component.getItem() instanceof IDecomposerControl && ((IDecomposerControl) component.getItem()).getDecomposerMultiplier(component) == 0) {
+                        continue;
+                    }
+                    DecomposerRecipe decompRecipe = DecomposerRecipe.get(component);
+                    if (decompRecipe != null) {
+                        addDecompRecipe(decompRecipe, 1.0D / Math.max(input.stackSize, 1));
+                    } else if (!component.isItemEqual(input) || !(component.getItemDamage() == input.getItemDamage())) {
+                        //Recursively generate recipe
+                        Recipe recipe = Recipe.get(component);
+                        if (recipe != null && level < Settings.recursiveDepth) {
+                            DecomposerRecipeSuper newSuper;
+                            DecomposerRecipe.add(newSuper = new DecomposerRecipeSuper(recipe.output, recipe.inStacks, level + 1));
+                            addDecompRecipe(newSuper, 1.0D / recipe.getOutStackSize());
+                        }
                     }
                 }
             }
